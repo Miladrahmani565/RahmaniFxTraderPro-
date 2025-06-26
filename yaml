@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ForexTradingSystem
+    runtime: node
+    repo: https://github.com/miladrahmani56/ForexTradingSystem
+    plan: free
+    region: oregon
+    buildCommand: npm install
+    startCommand: node index.js
+    autoDeployTrigger: commit
